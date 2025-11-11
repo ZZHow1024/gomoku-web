@@ -21,7 +21,7 @@ function App() {
     <Layout>
       <Layout.Header>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '0 16px' }}>
-          <span style={{ fontWeight: 600 }}>MCTS 算法演示</span>
+          <span style={{ fontWeight: 600 }}>MiniMax 算法演示</span>
           <div style={{ flex: 1 }}>
             <Tabs value={active} onChange={(v) => onMenuChange(String(v))} placement="top">
               <Tabs.TabPanel value="/game" label="井字棋对弈" />
