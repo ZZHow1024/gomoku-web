@@ -17,11 +17,16 @@ function App() {
     }
   }
 
+  const goToHome = () => {
+    navigate('/game')
+  }
+
   return (
     <Layout>
       <Layout.Header>
         <div style={{ display: 'flex', alignItems: 'center', gap: 16, padding: '0 16px' }}>
-          <span style={{ fontWeight: 600 }}>MiniMax 算法演示</span>
+          <img src="https://cg.bistucetc.com/wp-content/uploads/2025/09/计算机博弈logo.jpg" alt="Logo" style={{ width: 40, height: 40, cursor: 'pointer' }} onClick={goToHome} />
+          <span style={{ fontWeight: 600, cursor: 'pointer' }} onClick={goToHome}>MiniMax 算法演示</span>
           <div style={{ flex: 1 }}>
             <Tabs value={active} onChange={(v) => onMenuChange(String(v))} placement="top">
               <Tabs.TabPanel value="/game" label="井字棋对弈" />
